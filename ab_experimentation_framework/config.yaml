@@ -1,0 +1,10 @@
+experiment:
+  name: "new_checkout_flow_v1"
+  baseline_conversion_rate: 0.12   # Current CR (12%)
+  mde: 0.02                        # We want to detect at least a 2% lift
+  alpha: 0.05                      # Type I error (Significance level)
+  power: 0.80                      # 1 - Type II error (Statistical power)
+
+metrics:
+  primary: "conversion_rate"
+  guardrail: "average_latency_ms"
